@@ -15,11 +15,15 @@ while(true){
   if(userInput === computerSelection){
     console.log("It's a tie!");
   }
-  else if((userInput = "rock" && computerSelection = "paper") ||
-          (userInput = "paper" && computerSelection = "scissors") ||
-          (userInput = "scissors" && computerSelection = "rock")){
-    console.log("You Lose!");
-  }
-  else if{
-    console.log("You Win!");
-  }
+  else if ((userInput == "rock") && (computerSelection =="paper") ||
+          ((userInput =="paper") && (computerSelection == "scissors")) ||
+          ((userInput == "scissors") && (computerSelection == "rock")){
+
+          console.log("You Lose!");
+ }
+         
+  
+  else {
+  console.log("You Win!");
+}
+}

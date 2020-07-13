@@ -21,30 +21,67 @@ const READLINE = require("readline-sync");
 // **** Challenge 1: Problem 1 ****
 // Write a function called printMessage() that prints any message you want.
 
+function printMessage(){
+	console.log("Hello")
+}
 
 // **** Challenge 1: Problem 2 ****
 // Write a function called printFiveMessages() that calls printMessage() five times.
+function printFiveMessages(){
+	printMessage()
+	printMessage()
+	printMessage()
+	printMessage()
+	printMessage()
+}
 
 
 // **** Challenge 1: Problem 3 ****
 // Write a function called getUserInput() that asks the user if they'd like to print your message
 // once or five times. Then call one of the two functions above based on what the user decides.
 
+function getUserInput(){
+	//let M = ""; -- Do we need this?
+	 M = READLINE.question("Would you like to print my message 1 or 5 times?");
+	if (M == 1){
+		printMessage()
+	}
+	else if (M == 5){
+		printFiveMessages()
+	}
+	else{
+		console.log("You must pick numbers 1 or 5. Try again")
+	}
+	
+	
+
+}
+
 
 // **** Challenge 1: Problem 4 ****
 // Write a function called printGreeting() that prints a greeting message to the user.
-
+function printGreeting(){
+	console.log("Greetings User")
+}
 
 // **** Challenge 1: Problem 5 ****
 // Write a function called printClosing() that prints a goodbye message to the user.
-
+function printClosing(){
+	console.log("Goodbye User")
+}
 
 // **** Challenge 1: Problem 6 ****
 // Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 // Remember! Use the functions that you've already made. Don't hardcode anything!
 
+function run(){
+	printGreeting()
+	getUserInput()
+	printClosing()
 
 
+}
+run()
 /* -------------------------------------------- 
 
 Challenge 2: Functions are also able to take input and return output. 
@@ -65,6 +102,9 @@ However, if the two values are the same, the funciton will return double their s
 		sumDouble(2, 2) → 8
 
 -------------------------------------------- */
+
+function sumDouble(){
+	if 
 
 
 

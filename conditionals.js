@@ -16,8 +16,16 @@ console.log("------------------- Challenge 1 -------------------")
     Prompt the user to enter their age.
     Write conditional statements that print out whether you can drive in your city. */
 
+// let msg = "";
+// msg = READLINE.question("age?");
+// console.log("my age is" , msg);
 
 
+// if (msg >= 16){
+//     console.log (" You are old enough to drive")
+// }
+// else {console.log(" You are not old enough to drive.")
+// }
 
 
 
@@ -35,13 +43,19 @@ console.log("------------------- Challenge 2 -------------------")
 /* Who placed first?
     Write conditional statements that checks which is the highest and prints the highest score. 
     Hint: Create three variables and assign them random scores. */
+let score_1 = 45;
+let score_2 = 35;
+let score_3 = 34;
 
-
-
-
-
-
-
+if ((score_1 > score_2) && (score_1 > score_3)){
+    console.log("Player 1 is the winner");
+}
+else if (score_2 > score_3){
+    console.log ("Player 2 is the winner");
+}
+else {
+    console.log("player 3 is the winner");
+}
 
 
 
@@ -63,8 +77,19 @@ console.log("------------------- Challenge 3 -------------------")
    Snowing: Wear gloves and a scarf */
 
 //Here's a variable to get you started:
-let weather = `rainy`;
+let weather = `sunny`;
+let temperature = 60
 
+
+if ((weather == "rainy") && ( temperature > 50 )){
+    console.log(" Bring an umbrella and a jacket")
+}
+else if ((weather == "sunny") && (temperature < 65)){
+    console.log("Wear a hat and wear light clothes ")
+}
+else {
+    console.log("Wear gloves and a scarf")
+}
 
 
 
@@ -110,11 +135,35 @@ console.log("------------------- Challenge 4 -------------------")
     and print out the corresponding day of the week. 
     Make sure to add a statement that accounts of any numbers out of range! */
 
-
-
-
-
-
+ //let Dayofweek = Math.floor(Math.random() * 7 + 1);
+ let dayofweek = "";
+ dayofweek = READLINE.question("What is the day of the week.(1-7 representing Monday - Sunday)");
+ //console.log("The day of the week is " , dayofweek)
+ 
+ if (dayofweek  == 1){
+     console.log("Monday")
+ }
+else if (dayofweek == 2){
+    console.log("Tuesday")
+}
+else if (dayofweek == 3){
+    console.log("Wednesday")
+}
+else if (dayofweek == 4){
+    console.log("Thursday")
+}
+else if (dayofweek == 5){
+    console.log("Friday")
+}
+else if (dayofweek == 6){
+    console.log("Saturday")
+}
+else if (dayofweek == 7){
+    console.log("Sunday")
+}
+else {
+    console.log("Oops you didn't chose a number between 1 and 7. Try again")
+}
 
 
 

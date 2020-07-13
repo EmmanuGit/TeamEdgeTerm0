@@ -17,7 +17,9 @@ It goes something like:
 -------------------------------------------- */
 
 console.log("------------------- Challenge 1 -------------------")
-
+let name = "Emmanuel (string)";
+let grade = 11;
+let funFact = "My birthday is on July 22 (string)";
 
 console.log(`Hi! My name is ${name}`);
 console.log(`I'm in the ${grade}th grade.`);
@@ -38,15 +40,16 @@ console.log(`A fun fact about me is that ${funFact}`);
 // **** Challenge 1: Problem 2 ****
 // Create a string for the different lines of the Happy Birthday Song
 // Print out the song using the stings you declared.
-
-
-
-
+let lines_1 = "Happy Birthday to you"
+let lines_2 = "Happy Birthday to you"
+let lines_3 = "Happy Dear Name"
+let lines_4 = "Happy Birthday to you"
+console.log(lines_1 + lines_2 + lines_3 + lines_4)
 // **** Challenge 1: Problem 3 ****
 // Print out a string that has backticks in it.
-
-
-
+let hi = hello
+let backticks = `${hi} person reading this`
+console.log(backticks)
 
 /* -------------------------------------------- 
 

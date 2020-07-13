@@ -40,6 +40,26 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 -------------------------------------------- */
 
+	
+	
+function getname(){
+	let userinput = READLINE.question("Client.1 What is your name?");
+	return userinput
+}
+let name = getname()
+
+function getmeal(name){
+	let userinput_meal = READLINE.question(`${name} how much did your meal cost`);
+	return userinput_meal
+}
+
+function getdrink(name){
+	var userinput_drink = READLINE.question(`${name} how much did your drink cost?`);
+	return userinput_drink
+}
+
+let meal = getmeal(name)
+let drink = getdrink(name)
 
 
 
@@ -64,9 +84,35 @@ Write a function that will calculate the cost of each person's order, including:
 Remember! Functions are meant to be reusable, so write a function that will work when called for each person!
 
 -------------------------------------------- */
+let tip =  parseInt(READLINE.question(`How much do you want to tip ${name}?  15% 20% 25% 0%`));
+let salestax = (parseInt(meal) + parseInt(drink)) * (.65)
+function cost(){
+	//let tip = parseInt(READLINE.question(`How much do you want to tip ${userinput}`));
+	//let tip2 = parseInt(READLINE.question(`How much do you want to tip ${userinput_2}`));
+	//let tip3 = parseInt(READLINE.question(`How much do you want to tip ${userinput_3}`));
+
+	
+	//let tip2 = parseInt(READLINE.question(`How much do you want to tip ${userinput_2}? 15% 20% 25% 0%`));
+	//let tip3 = parseInt(READLINE.question(`How much do you want to tip ${userinput_3}? 15% 20% 25% 0%`));
+	
 
 
+	
 
+
+	let price_1 = ((parseInt(meal) + parseInt(drink)) + (salestax)) * (1 + tip/100)
+	//let price_2 = (userinput_meal2 + userinput_drink2) * (1 + tip2/100 + .065)
+	//let price_3 = (userinput_meal3 + userinput_drink3) * (1 + tip3/100 + .065)
+	
+
+	
+
+
+console.log(price_1) 
+
+
+}
+cost()
 
 
 
@@ -91,7 +137,16 @@ Remember! Functions are meant to be reusable, so write a function that will work
 
 -------------------------------------------- */
 
-
+function receipt(name){
+console.log(`${name}: 
+					Meal Cost: $${meal}
+					Drink Cost: $${drink}
+					Tip: ${tip}%
+					Tax: $${salestax}
+					Total: ${cost()}  `)
+}                   
+receipt(name)
+//console.log(receipt(name))
 
 
 

@@ -12,6 +12,7 @@
   -------------------------------------------- */
 
   console.log(`My Simple Calculator`);
+  const READLINE = require("readline-sync");
 
 /* -------------------------------------------- 
 
@@ -29,6 +30,12 @@ Part 1:
 
 // Write a function called addNumbers that will take two numbers and return the sum.
 
+function addNumbers(x,y){
+	let sum = (x + y)
+	console.log(sum)
+	return sum
+
+}
 
 
 
@@ -37,6 +44,14 @@ Part 1:
 
 // Write a function called subNumbers that will take two numbers and return the difference.
 
+function subNumbers(x,y){
+	let sub = (x - y)
+	console.log(sub)
+	return sub
+	
+}
+
+//subNumbers(4,2)
 
 
 
@@ -45,12 +60,12 @@ Part 1:
 // Testing Code - Uncomment the code below to test your code!
 
 // checkAnswers(addNumbers(5, 15), 20); 
-// checkAnswers(addNumbers(3, 18), 21);
-// checkAnswers(addNumbers(12, 28), 40); 
+//  checkAnswers(addNumbers(3, 18), 21);
+//  checkAnswers(addNumbers(12, 28), 40); 
 
-// checkAnswers(subNumbers(18, 7), 11);
-// checkAnswers(subNumbers(11, 9), 2);
-// checkAnswers(subNumbers(18, 21), -3);
+//  checkAnswers(subNumbers(18, 7), 11);
+//  checkAnswers(subNumbers(11, 9), 2);
+//  checkAnswers(subNumbers(18, 21), -3);
 
 /* -------------------------------------------- 
 
@@ -67,28 +82,37 @@ Part 2:
   -------------------------------------------- */
 
 // Write a function called multiplyNumbers that will take two numbers and return the product.
+function multiplyNumbers(x,y){
+	let multi = (x * y)
+	console.log(multi)
+	return multi
+}
 
-
+//multiplyNumbers(4,5)
 
 
 
 
 // Write a function called divideNumbers that will take two numbers and return the quotent.
+function divideNumbers(x,y){
+	let div = (x/y)
+	console.log(div)
+	return div
+}
 
-
-
+//divideNumbers(45,5)
 
 
 
 /*------------*/
-// Testing Code - Uncomment the code below to test your code!
+//Testing Code - Uncomment the code below to test your code!
 
-// checkAnswers(multiplyNumbers(10, 3), 30); 
-// checkAnswers(multiplyNumbers(21, 7), 147);
-// checkAnswers(multiplyNumbers(4, 16), 64); 
+//  checkAnswers(multiplyNumbers(10, 3), 30); 
+//  checkAnswers(multiplyNumbers(21, 7), 147);
+//  checkAnswers(multiplyNumbers(4, 16), 64); 
 
-// checkAnswers(divideNumbers(24, 100), `.24`);
-// checkAnswers(divideNumbers(21, 7), `3`);
+//  checkAnswers(divideNumbers(24, 100), `.24`);
+//  checkAnswers(divideNumbers(21, 7), `3`);
 // checkAnswers(divideNumbers(15, 4), `3.75`);
 
 /* -------------------------------------------- 
@@ -102,6 +126,37 @@ Write a function that will prompt the user for the operation they want to call a
 
   -------------------------------------------- */
 
+
+   
+function user() {
+	let userinput = READLINE.question("+, -, *, or /");
+	if (userinput == "+"){
+		let num1 = parseInt(READLINE.question("What is your 1st number?"));
+		let num2 = parseInt(READLINE.question("What is your 2st number?"));
+		addNumbers (num1,num2);
+	}
+	else if (userinput == "-"){
+		let num1 = parseInt(READLINE.question("What is your 1st number?"));
+		let num2 = parseInt(READLINE.question("What is your 2st number?"));
+		subNumbers(num1,num2);
+	}
+	else if (userinput == "*"){
+		let num1 = parseInt(READLINE.question("What is your 1st number?"));
+		let num2 = parseInt(READLINE.question("What is your 2st number?"));
+		multiplyNumbers(num1,num2);
+}
+	else if (userinput == "/"){
+		let num1 = parseInt(READLINE.question("What is your 1st number?"));
+		let num2 = parseInt(READLINE.question("What is your 2st number?"));
+		divideNumbers(num1,num2);
+
+	}
+	else {
+		console.log("You didn't type one of the four options. Try again");
+	}
+
+}	
+ user();
 
 
 

@@ -28,6 +28,14 @@
 	Tip: Don't forget to import the readline-sync module!
 
   -------------------------------------------- */
+  const READLINE = require("readline-sync");
+
+
+
+  let userinput = READLINE.question("Ask a question");
+
+
+
 
 
 
@@ -60,7 +68,7 @@
 		8 - Yes.
 		9 - Signs point to yes.
 		10 - Reply hazy, try again.
-		11 - Ask again later.
+		11 - ummmmmmm No.
 		12 - Better not tell you now.
 		13 - Cannot predict now.
 		14 - Concentrate and ask again.
@@ -73,15 +81,69 @@
 	Look up Math.random to see how you can use it to select a random number.
 
   -------------------------------------------- */
+let answer = Math.floor(Math.random() * 19); 
 
-
-
-
-
-
-
-
-
+if (answer == 0){
+	console.log("It is certain.")
+}
+else if (answer == 1){
+	console.log("It is decidedly so.")
+}
+else if (answer == 2){
+	console.log("Without a doubt.")
+}
+else if (answer == 3){
+	console.log("Yes - definitely.")
+}
+else if (answer == 4 ){
+	console.log("You may rely on it.")
+}
+else if (answer == 5){
+	console.log("As I see it, yes.")
+}
+else if (answer == 6){
+	console.log("Most likely.")
+}
+else if (answer == 7){
+	console.log("Outlook good.")
+}
+else if (answer == 8){
+	console.log("Yes.")
+}
+else if (answer == 9){
+	console.log("Signs point to yes.")
+}
+else if (answer == 10){
+	console.log("Reply hazy, try again.")
+}
+else if (answer == 11){
+	console.log("ummmmmmm No.")
+}
+else if (answer == 12){
+	console.log("Better not tell you now.")
+}
+else if (answer == 13){
+	console.log("Cannot predict now.")
+	
+}
+else if (answer == 14){
+	console.log("Concentrate and ask again.")
+}
+else if (answer == 15){
+	console.log("Don't count on it.")
+}
+else if (answer == 16){
+	console.log("My reply is no.")
+}
+else if (answer == 17){
+	console.log("My sources say no.")
+}
+else if (answer == 18){
+	console.log("Outlook not so good.")
+}
+else if (answer == 19){
+	console.log("Very doubtful.")
+}
 
 
 

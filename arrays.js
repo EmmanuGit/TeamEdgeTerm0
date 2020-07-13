@@ -35,21 +35,25 @@ console.log("names: " + names)
 // **** Challenge 1 : Part 1 **** 
 // Given an array named food, fill the array with 5 strings.
 
-let food = []
+let food = ["nutella", "banana", "orange", "apple", "garlic"]
 console.log("food: " + food)  
 
 
 // **** Challenge 1 : Part 2 **** 
 // Declare an array named numbers with 5 numbers.
 
-
+let numbers = [1,2,3,4,5]
 console.log("numbers: " + numbers)   
 
 
 // **** Challenge 1 : Part 3 **** 
 // Declare and log two more arrays with anything you want. 
 
+let animals = ["cat", "dog", "lizard", "turtle"]
+console.log("animals:" + animals)
 
+let amount = [2,3,4,5]
+console.log("amount:" + amount)
 
 
 
@@ -66,12 +70,12 @@ console.log("The first name is " + names[0]);
 // **** Challenge 2 : Part 1 **** 
 // Log the name of the person from your food array you spoke to last.
 
-
+console.log(names[2])
 
 
 // **** Challenge 2 : Part 2 **** 
 // Log the first AND last elements of any array you made.
-
+console.log(animals[0,3])
 
 
 
@@ -89,10 +93,12 @@ console.log(names)
 // **** Challenge 3 : Part 1 **** 
 // Update all values of your food array with new food items that you're craving.
 
-
-
-
-
+food[0] = "waffles"
+food[1] = "tacos"
+food[2] = "PB&J"
+food[3] = "pizza"
+food[4] = "Burritos"
+console.log(food)
 
 // Example: The code below uses the timesTen function to multiply the first element in our array by 10:
 numbers[0] = timesTen(numbers[0])
@@ -105,6 +111,12 @@ function timesTen(number){
 
 // **** Challenge 3 : Part 2 **** 
 // Write a function that multiplies a number by 1000 and log the array. 
+amount[1] = times1000(amount[1])
+console.log(amount)
+function times1000(amount){
+    times1000num = amount * 1000
+    return times1000num
+}
 
 
 
@@ -127,7 +139,8 @@ console.log("Current Program Offerings: " + programs);
 // **** Challenge 4: ****
 // Declare a new array named 'orders' and store the food and numbers arrays in it. Log the orders array.
 
-
+let orders = [food, numbers]
+console.log(orders)
 
 
 
@@ -149,8 +162,10 @@ console.log("Movies now has: " + movies)
 
 // **** Challenge 5 : Part 1 **** 
 // Add 2 more food items and numbers using .push() to the food and numbers arrays respectively. Log both arrays before and after adding new values.
-
-
+console.log(orders)
+food.push("avocado", "pasta")
+numbers.push(9,6)
+console.log(orders)
 
 
 
@@ -159,15 +174,14 @@ console.log("Movies now has: " + movies)
 let cities = ["New York", "Oakland", "Las Vegas", "Topeka"]
 console.log("Cities: " + cities)
 let removedCity = cities.pop()
-console.log("Removed City: " + unwantedCity)
+console.log("Removed City: " + removedCity)
 
 
 // **** Challenge 5 : Part 2 **** 
 // Remove your last food item using .pop() and log the removed element.
 
-
-
-
+let removedfood = food.pop()
+console.log(food)
 
 //Note: There are more methods to remove and modify array elements. If you're curious, check out the reference on the course website.
 
@@ -185,7 +199,8 @@ console.log(`There are ${numCities} ciites in my array`)
 // **** Challenge 6 : Part 1 **** 
 // Print out the number of food items using string literals.
 
-
+let foodnum = food.length
+console.log(`There are ${foodnum} foods in the foods array`)
 
 
 // Example: The length property is key, especially in conditionals or to simply count how many times to do something.
@@ -198,8 +213,13 @@ if(numbers.length > 3){
 // **** Challenge 6 : Part 2 **** 
 // Write an if/else statement to check the size of your food array. If you have 5 of less, add two more food items.
 
-
-
+if (food.length <= 5){
+  food.push("pear", "toast")
+  console.log(food)
+}
+else{
+    console.log("you have more than 5 foods in your foods array")
+}
 
 
 
@@ -224,8 +244,8 @@ console.log("letter by letter: " + wordSplitArray)
 // **** Challenge 7 : Part 1 **** 
 // Change the name of the person who is late in this sentence and log it.
 let whosLate = "I heard Alex was late to class today."
-
-
+let late = whosLate.split(3)
+console.log(late)
 
 
 
