@@ -17,19 +17,21 @@
 
 const READLINE = require("readline-sync");
 
-console.log("------------------- CHALLENGE 1 : COUNTER -------------------")
+// console.log("------------------- CHALLENGE 1 : COUNTER -------------------")
 
-//this array logs every number between 0 and 10, using the index i
+// //this array logs every number between 0 and 10, using the index i
 
-for(let i = 0 ; i <=10 ; i++) {
+// for(let i = 0 ; i <=10 ; i++) {
 
-    console.log("Counter at: " + i)
+//     console.log("Counter at: " + i)
    
-   }
+//    }
 
-//-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
+// //-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
 
-
+// for(let age = 1; age <= 15; age++){
+//     console.log(`Happy Birthday. You are ${age} years old `)
+//}
 
 console.log("------------------- CHALLENGE 2 : ITERATOR ----------------------")
 
@@ -37,21 +39,25 @@ console.log("------------------- CHALLENGE 2 : ITERATOR ----------------------")
 let colors = ['red' , 'violet' , 'cyan' , 'pink' , 'lime' , 'white' , 'yellow', 'black' , 'magenta', 'green', 'orange']
 
 //This is how you can iterate through an array using the length property:
-for(let i = 0 ; i< colors.length; i ++) {
+for(let i = 0 ; i < colors.length; i ++) {
 
     console.log("The color is: " + colors[i])
 }
 
-//-->TODO: Declare an array with at least 10 animals. You provide the animals.
-let animals = []
+// //-->TODO: Declare an array with at least 10 animals. You provide the animals.
+ let animals = ["cat", "dog", "bird", "bunny", "gecko", "goat", "wolf", "coyote", "hamster", "frog" ]
 
-//-->TODO: Log all the animals in the array with a for loop. 
+// //-->TODO: Log all the animals in the array with a for loop. 
+//for (let a = 0; a <= animals.length; a++  ){
+    //console.log(animals)
+//}
+//need help
 
 
 console.log("------------------- CHALLENGE 3 : DEBUG -------------------------")
 
 //-->TODO: fix this code so it no longer logs the last item as undefined...
-for(let i = 0 ; i<= colors.length; i ++) {
+for(let i = 0 ; i < colors.length; i ++) {
 
     console.log("The color is: " + colors[i])
 }
@@ -59,92 +65,92 @@ for(let i = 0 ; i<= colors.length; i ++) {
 //-->TODO: fix this code! What could be wrong? It should print out the 5 times tables all the way to 12.
 
 console.log("Behold...the 5 times table: ")
-for(let i = 0 ; i > 12;  i++) {
+for(let i = 0 ; i < 12;  i++) {
 
     console.log(` 5 x ${i} =  ` + i*5 )
      
 }
 
-//-->TODO: This function takes in an array, but needs to log the items inside. What's missing?
+// //-->TODO: This function takes in an array, but needs to log the items inside. What's missing?
 
-function logArray(array){
+// function logArray(array){
 
-    for(let i = 0 ; i<array.length ; i++){
+//     for(let i = 0 ; i<array.length ; i++){
 
-        console.log(i)
-    }
-}
+//         console.log(i)
+//     }
+// }
 
  
 
-console.log("------------------- CHALLENGE 4 : EVEN COUNTDOWN ------------------")
+// console.log("------------------- CHALLENGE 4 : EVEN COUNTDOWN ------------------")
 
 
-// This makes a ranbdom number between 0-50
-let random = Math.floor(Math.random() * 51); //
+// // This makes a ranbdom number between 0-50
+// let random = Math.floor(Math.random() * 51); //
 
-//this if/else statement checks if the number is even using the modulo operator (%)
-if(random % 2 == 0){
+// //this if/else statement checks if the number is even using the modulo operator (%)
+// if(random % 2 == 0){
 
-    console.log(random + " is even!")
-}else {
+//     console.log(random + " is even!")
+// }else {
 
-    console.log(random + " is odd!")
-}
+//     console.log(random + " is odd!")
+// }
 
-//-->TODO: Write a function that counts BACKWARDS from 100 and logs only odd numbers
-
-
-//-->TODO: Write a function that counts BACKWARDS from the given random number and logs only even numbers
+// //-->TODO: Write a function that counts BACKWARDS from 100 and logs only odd numbers
 
 
-console.log("------------------- CHALLENGE 5 : Finder ------------------")
-
-//This code uses .includes() to see if an element exists in an array. It only has to appear once.
-let color = READLINE.question('Type a one word color and see if it is one of my favorite colors! >> ')
-if(colors.includes(color)){
-
-    console.log("Yes, that color is a fav")
-}else{
-
-    console.log("No, that color is not one my favorites")
-}
-
-//-->TODO Declare an array of any strings you  want: cities, friends, movies, etc.
+// //-->TODO: Write a function that counts BACKWARDS from the given random number and logs only even numbers
 
 
-//-->TODO Prompt the user to "Guess" if an element is present. Store their response in a varaible
+// console.log("------------------- CHALLENGE 5 : Finder ------------------")
+
+// //This code uses .includes() to see if an element exists in an array. It only has to appear once.
+// let color = READLINE.question('Type a one word color and see if it is one of my favorite colors! >> ')
+// if(colors.includes(color)){
+
+//     console.log("Yes, that color is a fav")
+// }else{
+
+//     console.log("No, that color is not one my favorites")
+// }
+
+// //-->TODO Declare an array of any strings you  want: cities, friends, movies, etc.
 
 
-//-->TODO Write function to prompt the user and see if the element is present. IF so, print CONGRATULATIONS!
+// //-->TODO Prompt the user to "Guess" if an element is present. Store their response in a varaible
 
 
-//-->TODO Call your function.
+// //-->TODO Write function to prompt the user and see if the element is present. IF so, print CONGRATULATIONS!
+
+
+// //-->TODO Call your function.
 
 
 
-console.log("------------------- CHALLENGE 6 : Nested ------------------")
+// console.log("------------------- CHALLENGE 6 : Nested ------------------")
 
-//this is how you get the length of a word:
-let bigWord = "antidisestablishmentarianism"
-console.log(`${bigWord} has  ${bigWord.length} letters` )
+// //this is how you get the length of a word:
+// let bigWord = "antidisestablishmentarianism"
+// console.log(`${bigWord} has  ${bigWord.length} letters` )
 
-//this is how you can nest for loops, one insde the other! Theseloops through all the colors, and then through all the characters in the color
-for(let i = 0; i < colors.length ; i++){
-//for all the colors:
+// //this is how you can nest for loops, one insde the other! Theseloops through all the colors, and then through all the characters in the color
+// for(let i = 0; i < colors.length ; i++){
+// //for all the colors:
 
-   console.log(colors[i] ) 
+//    console.log(colors[i] ) 
 
-     for(let j = 0 ; j < colors[i].length; j++){
+//      for(let j = 0 ; j < colors[i].length; j++){
 
-            console.log(" - " + colors[i][j]) //log each letter. Remember, a string is also an array of characters.
+//             console.log(" - " + colors[i][j]) //log each letter. Remember, a string is also an array of characters.
 
-     }
+//      }
 
-}
+// }
 
-//-->TODO Write a function that logs every letter in a sentence that a user enters.
+// //-->TODO Write a function that logs every letter in a sentence that a user enters.
 
 
-//-->CHALLENGE Let the user know which word is the shortest one!
+// //-->CHALLENGE Let the user know which word is the shortest one!
 

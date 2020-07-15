@@ -41,6 +41,11 @@ console.log("example counter--> " + num)
 num++
 }
 //-->TODO: Declare a while loop that prints all the prime numbers between 0 and 1000
+// num = 0
+// i = 2
+// while (num < 1000 ){
+//     //if ((num) != 
+// }
 
 
 
@@ -68,7 +73,7 @@ function evenNumbersToFifty(){
     while(num <50){
 
         console.log("number: " + num)
-
+        num ++
     }
 }
 evenNumbersToFifty()
@@ -115,6 +120,21 @@ console.log("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 //         Use this handy boolean to get you started! You will need readline_sync!
 
 let isCorrect = false
+num1 = 4
+num2 = 6
+
+
+
+    
+        while ( isCorrect == false ){
+            userinput = READLINE.question(`What is the sum of the numbers ${num1} and ${num2} `);
+            
+            if (userinput == (num1 + num2)){
+                console.log("Congrats, you are correct");
+                isCorrect = true;
+}
+ }
+
 
 
 console.log("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
