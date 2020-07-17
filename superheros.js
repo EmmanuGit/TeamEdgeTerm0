@@ -19,15 +19,15 @@
 
 console.log("-------------------  SUPERHERO !!  -------------------")
 
-const DELAY = 3000
+const DELAY = 1000
 const DAMAGE_LIMIT = 5
 const MAJOR_BLOW = DAMAGE_LIMIT -2
-const LIVES_TOP_RANGE = 60
+const LIVES_TOP_RANGE = 30
 const LIVES_BOTTOM_RANGE = 40
 let rounds = 1
 let gameIsOn = true
 
-//COMMENT 1: 
+//COMMENT 1: Objects that are tracking the two characters  
 class Superhero {
 
     constructor(name, isAlive, friends, hitPoints, isGood , attackPower) {
@@ -40,7 +40,7 @@ class Superhero {
        
      } attack(enemy){
         
-        //COMMENT 2 ....
+        //COMMENT 2 
         if(this.isAlive && enemy.isAlive){  
           
             console.log("  \n   ")

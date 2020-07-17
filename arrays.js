@@ -244,8 +244,8 @@ console.log("letter by letter: " + wordSplitArray)
 // **** Challenge 7 : Part 1 **** 
 // Change the name of the person who is late in this sentence and log it.
 let whosLate = "I heard Alex was late to class today."
-let late = whosLate.split(3)
-console.log(late)
+let late = whosLate.split([2])
+
 
 
 

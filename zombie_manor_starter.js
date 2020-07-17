@@ -36,7 +36,7 @@ let rooms = [] //push any new rooms you create to this array
   let kitchen = new Room()
    kitchen.name = "Kitchen"
    kitchen.description = "The kitchen is a really nice one! It has all the stuff you need to cook a healthy meal...of zombie parts! on the table there is a red pill."
-   kitchen.objects =["potion", "sandwich", "knife"]
+   kitchen.objects =["cutting board", "sandwich", "knife"]
    kitchen.paths=["Living Room" , "Bathroom" , "Backyard" ]
 
    let bathroom = new Room()
@@ -44,6 +44,17 @@ let rooms = [] //push any new rooms you create to this array
    bathroom.description ="You are in a Bathroom. Everything is a mess. There is blood on the floor. The shower is still on... "
    bathroom.objects = ["towel" , "toothbrush", "toilet Paper", "soap"]
    bathroom.paths =["Kitchen"]
+
+   let livingroom = new Room()
+   livingroom.name = "living room"
+   livingroom.description = "You are in the livingroom. Theres blood everywhere and there is someone lying in a pool of blood. Face ripped off. Missinng an arm. Huge bite on his right leg. Back shredded"
+   livingroom.objects =["remote", "glass of water", "jacket", "key"]
+   livingroom.paths=["Kitchen" , "Bathroom" , "Backyard" ]
+
+
+
+
+   
 
 rooms.push(kitchen, bathroom) //add the rooms to the rooms array
  

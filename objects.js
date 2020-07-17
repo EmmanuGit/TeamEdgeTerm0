@@ -47,9 +47,26 @@ console.log(object)
 
 //*********************************  MY OBJECT *************************** */
 
+let computer = {
+    screen: "display",
+    brand: "Mac",
+    model: "Catalina",
+    isnew: true,
+    yearmade: 2019,
+    input: ["keyboard", "mouse"],
+    saveData(){
+        console.log("your data is saved");
+    }
+    newtoOld() {
+        this.isNew = false
+    }
+    addInput(i){
+        this.input.push(i)
+    }
+ }
 
 
-
+console.log(computer.brand)
 
 
 //************************************************************************* */
@@ -59,19 +76,23 @@ console.log(object)
 console.log("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 //-->TODO: Log your object you created above
-
+console.log(computer.model)
 
 //-->TODO: Update the object you just created  by adding new properties and values, including array elements, in this section.
+computer.color = "grey"
+console.log(computer.color)
 
+computer.input.push("touchscreen")
 
 //-->TODO: Log your object again and observe changes
-
-
+console.log(computer.input)
 console.log("------------------- CHALLENGE 3 : METHOD   -------------------")
 
 //-->TODO: Add at least two methods (object functions) to your object defined in Challenge 1 and invoke them here.
 //          Make your methods update your variables, or add a random number to an array, etc.
-
+computer.saveData()
+compiter.addinput("Touch Screen")
+console.log(computer.input)
 
 console.log("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
